@@ -1,105 +1,293 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elon Musk - A Modern Polymath</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #1a365d;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #2563eb;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                        url('https://wallpapercave.com/wp/wp2939892.jpg') center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            color: #1a365d;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2563eb;
+        }
+
+        section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item h4 {
+            margin-top: 10px;
+            color: #1a365d;
+        }
+
+        .gallery-item p {
+            font-size: 14px;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        /* Table of Contents - Wikipedia Style */
+        .toc {
+            background: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 20px;
+            margin-bottom: 40px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+
+        .toc h3 {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 8px;
+        }
+
+        .toc ol {
+            margin-left: 20px;
+        }
+
+        .toc ol li {
+            margin: 8px 0;
+        }
+
+        .toc ol li a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .toc ol li a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Elon Musk - A Modern Polymath</h1>
+    <!-- Navbar -->
     <nav>
-        <a href="#tesla_titan">The Titan Behind Tesla</a> | <br/>
-        <a href="#starship_dreamer">The Starship Dreamer</a> | <br/>
-        <a href="#x_factor">The X Factor</a> | <br/>
-        <a href="#mind_machine">Where Mind Meets Machine</a> | <br/>
-        <a href="#empire_gallery">The Empire in Pictures</a> <br/>
+        <ul>
+            <li><a href="#tesla_titan">Tesla</a></li>
+            <li><a href="#starship_dreamer">SpaceX</a></li>
+            <li><a href="#x_factor">X (Twitter)</a></li>
+            <li><a href="#mind_machine">Neuralink</a></li>
+            <li><a href="#empire_gallery">Gallery</a></li>
+            <li><a href="./login.html">Logout</a></li>
+        </ul>
     </nav>
-    <hr>
 
-   
-    <h3 id="tesla_titan">The Titan Behind Tesla</h3>
-    <p>
-        Elon Musk joined Tesla Motors in 2004 as chairman of the board after leading its Series A funding round. He later became CEO in 2008 and transformed the company from a niche electric car startup into the world's most valuable automaker. Under his leadership, Tesla launched the Roadster, Model S, Model 3, Model X, Model Y, and the Cybertruck — each pushing the boundaries of electric vehicle technology.
-    </p>
-    <p>
-        Tesla's mission, "to accelerate the world's transition to sustainable energy," extends beyond cars. The company produces solar panels, the Solar Roof, and the Powerwall home battery. Tesla's Gigafactories, spread across the United States, Germany, and China, represent some of the largest manufacturing facilities on Earth, producing batteries and vehicles at an unprecedented scale.
-    </p>
-    <p>
-        Musk's hands-on engineering approach and relentless push for innovation have made Tesla synonymous with the electric vehicle revolution. From pioneering over-the-air software updates to developing Full Self-Driving technology, Tesla continues to redefine what a car company can be.
-    </p>
-    <hr>
+    <!-- Header -->
+    <header>
+        <h1>Elon Musk</h1>
+    </header>
 
+    <!-- Main Content -->
+    <main>
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3>Contents</h3>
+            <ol>
+                <li><a href="#tesla_titan">The Titan Behind Tesla</a></li>
+                <li><a href="#starship_dreamer">The Starship Dreamer</a></li>
+                <li><a href="#x_factor">The X Factor</a></li>
+                <li><a href="#mind_machine">Where Mind Meets Machine</a></li>
+                <li><a href="#empire_gallery">The Empire in Pictures</a></li>
+            </ol>
+        </div>
 
-    <h3 id="starship_dreamer">The Starship Dreamer</h3>
-    <p>
-        In 2002, Elon Musk founded Space Exploration Technologies Corp. (SpaceX) with a bold vision: to make humanity a multi-planetary species. At a time when the aerospace industry was dominated by legacy contractors charging billions per launch, Musk set out to build affordable, reusable rockets from scratch.
-    </p>
-    <p>
-        SpaceX achieved historic milestones — the Falcon 1 became the first privately developed liquid-fueled rocket to reach orbit in 2008. The Falcon 9 followed, becoming the workhorse of the commercial launch industry with its revolutionary reusable first-stage booster. The Falcon Heavy, capable of carrying massive payloads, became the most powerful operational rocket in the world upon its debut in 2018.
-    </p>
-    <p>
-        The Starship program represents Musk's ultimate ambition: a fully reusable super-heavy-lift launch vehicle designed to carry humans to Mars and beyond. SpaceX's Starlink satellite constellation, providing global broadband internet, has already deployed thousands of satellites into low Earth orbit, generating revenue to fund the Mars mission. From landing boosters on drone ships to envisioning cities on the Red Planet, SpaceX has fundamentally changed the space industry.
-    </p>
-    <hr>
+        <section id="tesla_titan">
+            <h2>The Titan Behind Tesla</h2>
+            <p>
+                Elon Musk joined Tesla Motors in 2004 as chairman of the board after leading its Series A funding round. He later became CEO in 2008 and transformed the company from a niche electric car startup into the world's most valuable automaker. Under his leadership, Tesla launched the Roadster, Model S, Model 3, Model X, Model Y, and the Cybertruck — each pushing the boundaries of electric vehicle technology.
+            </p>
+            <p>
+                Tesla's mission, "to accelerate the world's transition to sustainable energy," extends beyond cars. The company produces solar panels, the Solar Roof, and the Powerwall home battery. Tesla's Gigafactories, spread across the United States, Germany, and China, represent some of the largest manufacturing facilities on Earth, producing batteries and vehicles at an unprecedented scale.
+            </p>
+            <p>
+                Musk's hands-on engineering approach and relentless push for innovation have made Tesla synonymous with the electric vehicle revolution. From pioneering over-the-air software updates to developing Full Self-Driving technology, Tesla continues to redefine what a car company can be.
+            </p>
+        </section>
 
+        <section id="starship_dreamer">
+            <h2>The Starship Dreamer</h2>
+            <p>
+                In 2002, Elon Musk founded Space Exploration Technologies Corp. (SpaceX) with a bold vision: to make humanity a multi-planetary species. At a time when the aerospace industry was dominated by legacy contractors charging billions per launch, Musk set out to build affordable, reusable rockets from scratch.
+            </p>
+            <p>
+                SpaceX achieved historic milestones — the Falcon 1 became the first privately developed liquid-fueled rocket to reach orbit in 2008. The Falcon 9 followed, becoming the workhorse of the commercial launch industry with its revolutionary reusable first-stage booster. The Falcon Heavy, capable of carrying massive payloads, became the most powerful operational rocket in the world upon its debut in 2018.
+            </p>
+            <p>
+                The Starship program represents Musk's ultimate ambition: a fully reusable super-heavy-lift launch vehicle designed to carry humans to Mars and beyond. SpaceX's Starlink satellite constellation, providing global broadband internet, has already deployed thousands of satellites into low Earth orbit, generating revenue to fund the Mars mission. From landing boosters on drone ships to envisioning cities on the Red Planet, SpaceX has fundamentally changed the space industry.
+            </p>
+        </section>
 
-    <h3 id="x_factor">The X Factor</h3>
-    <p>
-        In October 2022, Elon Musk completed his $44 billion acquisition of Twitter, one of the most talked-about corporate takeovers in history. He immediately began reshaping the platform, rebranding it to "X" in July 2023 as part of his long-held vision to create an "everything app" — a Western equivalent to China's WeChat.
-    </p>
-    <p>
-        The acquisition was marked by sweeping changes: massive workforce reductions, a revamped verification system with the paid X Premium (formerly Twitter Blue), the introduction of long-form posts, and the opening of the platform's recommendation algorithm as open source. Musk positioned himself as a champion of free speech, reversing many previous content moderation policies.
-    </p>
-    <p>
-        Whether praised or criticized, Musk's takeover of Twitter/X has been one of the most consequential events in social media history. The platform continues to evolve under his ownership, with ambitious plans for integrated payments, video content, and AI-powered features — all under the singular brand of X.
-    </p>
-    <hr>
+        <section id="x_factor">
+            <h2>The X Factor</h2>
+            <p>
+                In October 2022, Elon Musk completed his $44 billion acquisition of Twitter, one of the most talked-about corporate takeovers in history. He immediately began reshaping the platform, rebranding it to "X" in July 2023 as part of his long-held vision to create an "everything app" — a Western equivalent to China's WeChat.
+            </p>
+            <p>
+                The acquisition was marked by sweeping changes: massive workforce reductions, a revamped verification system with the paid X Premium (formerly Twitter Blue), the introduction of long-form posts, and the opening of the platform's recommendation algorithm as open source. Musk positioned himself as a champion of free speech, reversing many previous content moderation policies.
+            </p>
+            <p>
+                Whether praised or criticized, Musk's takeover of Twitter/X has been one of the most consequential events in social media history. The platform continues to evolve under his ownership, with ambitious plans for integrated payments, video content, and AI-powered features — all under the singular brand of X.
+            </p>
+        </section>
 
- 
-    <h3 id="mind_machine">Where Mind Meets Machine</h3>
-    <p>
-        Founded in 2016, Neuralink is Elon Musk's neurotechnology venture aiming to develop brain-computer interfaces (BCIs). The company's tiny, flexible electrode threads — thinner than a human hair — are designed to be implanted into the brain by a precision surgical robot, enabling direct communication between the human brain and computers.
-    </p>
-    <p>
-        Neuralink's first human trial began in early 2024, with a patient successfully controlling a computer cursor using only their thoughts. The technology holds transformative potential for people with paralysis, neurological disorders, and spinal cord injuries. Long-term, Musk envisions Neuralink enabling a symbiosis between humans and artificial intelligence.
-    </p>
-    <p>
-        Beyond Neuralink, Musk has been deeply involved in the AI landscape. He co-founded OpenAI in 2015 before departing, and later launched xAI in 2023, building the Grok AI chatbot. His stance on AI — viewing it as both humanity's greatest opportunity and greatest existential threat — has made him one of the most vocal figures in the global conversation around AI safety and regulation.
-    </p>
-    <hr>
+        <section id="mind_machine">
+            <h2>Where Mind Meets Machine</h2>
+            <p>
+                Founded in 2016, Neuralink is Elon Musk's neurotechnology venture aiming to develop brain-computer interfaces (BCIs). The company's tiny, flexible electrode threads — thinner than a human hair — are designed to be implanted into the brain by a precision surgical robot, enabling direct communication between the human brain and computers.
+            </p>
+            <p>
+                Neuralink's first human trial began in early 2024, with a patient successfully controlling a computer cursor using only their thoughts. The technology holds transformative potential for people with paralysis, neurological disorders, and spinal cord injuries. Long-term, Musk envisions Neuralink enabling a symbiosis between humans and artificial intelligence.
+            </p>
+            <p>
+                Beyond Neuralink, Musk has been deeply involved in the AI landscape. He co-founded OpenAI in 2015 before departing, and later launched xAI in 2023, building the Grok AI chatbot. His stance on AI — viewing it as both humanity's greatest opportunity and greatest existential threat — has made him one of the most vocal figures in the global conversation around AI safety and regulation.
+            </p>
+        </section>
 
+        <section id="empire_gallery">
+            <h2>The Empire in Pictures</h2>
+            <p>Below is a gallery showcasing Elon Musk and the companies he has built.</p>
 
-    <h3 id="empire_gallery">The Empire in Pictures</h3>
-    <p>Below is a gallery showcasing Elon Musk and the companies he has built.</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./2026-tesla-model-s-plaid-134-68f6610846819.avif" alt="Tesla Model S">
+                    <h4>Tesla Model S</h4>
+                    <p>The car that proved electric vehicles could be desirable.</p>
+                </div>
 
-    <img src="./2026-tesla-model-s-plaid-134-68f6610846819.avif" alt="Tesla Model S" width="300" height="200">
-    <br><b>Tesla Model S</b>
-    <br><i>The car that proved electric vehicles could be desirable.</i>
-    <br><br>
-  
-    <img src="./E7662CBA-7B6A-461E-93B5F376D53FC94C_source.webp" alt="SpaceX Falcon Heavy Launch" width="300" height="200">
-    <br><b>Falcon Heavy Launch</b>
-    <br><i>The world's most powerful operational rocket lifts off.</i>
-    <br><br>
+                <div class="gallery-item">
+                    <img src="./E7662CBA-7B6A-461E-93B5F376D53FC94C_source.webp" alt="SpaceX Falcon Heavy Launch">
+                    <h4>Falcon Heavy Launch</h4>
+                    <p>The world's most powerful operational rocket lifts off.</p>
+                </div>
 
-    <img src="./kennedy.jpg" alt="SpaceX Starship" width="300" height="200">
-    <br><b>SpaceX Starship</b>
-    <br><i>The vehicle designed to take humanity to Mars.</i>
-    <br><br>
+                <div class="gallery-item">
+                    <img src="./kennedy.jpg" alt="SpaceX Starship">
+                    <h4>SpaceX Starship</h4>
+                    <p>The vehicle designed to take humanity to Mars.</p>
+                </div>
 
-    <img src="./giga_nevada_blog_hero_1.jpeg" alt="Tesla Gigafactory" width="300" height="200">
-    <br><b>Tesla Gigafactory</b>
-    <br><i>One of the largest buildings in the world by footprint.</i>
-    <br><br>
+                <div class="gallery-item">
+                    <img src="./giga_nevada_blog_hero_1.jpeg" alt="Tesla Gigafactory">
+                    <h4>Tesla Gigafactory</h4>
+                    <p>One of the largest buildings in the world by footprint.</p>
+                </div>
 
-    <img src="./2025-tesla-cybertruck.avif" alt="Tesla Cybertruck" width="300" height="200">
-    <br><b>Tesla Cybertruck</b>
-    <br><i>The boldest pickup truck ever designed.</i>
-    <br><br>
+                <div class="gallery-item">
+                    <img src="./2025-tesla-cybertruck.avif" alt="Tesla Cybertruck">
+                    <h4>Tesla Cybertruck</h4>
+                    <p>The boldest pickup truck ever designed.</p>
+                </div>
 
-    <img src="./LUEEeUmSCpuF5gECrgeEdM.jpg" alt="Starlink Satellites Deployment" width="300" height="200">
-    <br><b>Starlink Satellite Deployment</b>
-    <br><i>Thousands of satellites bringing internet to the world.</i>
+                <div class="gallery-item">
+                    <img src="./LUEEeUmSCpuF5gECrgeEdM.jpg" alt="Starlink Satellites Deployment">
+                    <h4>Starlink Satellite Deployment</h4>
+                    <p>Thousands of satellites bringing internet to the world.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
